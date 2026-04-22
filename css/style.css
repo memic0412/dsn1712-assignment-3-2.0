@@ -41,9 +41,9 @@ body {
   margin: 0;
   padding: 0;
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1.3;
-    margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.3;
+  margin: 0;
 }
 
 
@@ -70,13 +70,7 @@ body {
   padding: 20px; 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
-/* 
 
-#about-me {
- background-color: #f9f9f9;
- padding-top: 40px;
- padding-bottom: 40px;
-} */
 
 #about-me .wrapper {
   display: grid;
@@ -95,21 +89,18 @@ body {
   display: block;
 }
 
-/* 1. Section background */
+
 #services {
   background-color: #fafafa;
   padding-block: 4em;
 }
 
-/* 2. Wrapper: Max-width 940px and centered */
-/* This targets the container holding the H2 and the grid */
 .services-text {
   max-width: 940px;
-  margin-inline: auto; /* Centers the whole section content */
+  margin-inline: auto;
   padding-inline: 20px;
 }
 
-/* 3. Heading: Max-width and centered */
 #services h2 {
   max-width: 600px;
   margin-inline: auto;
@@ -117,21 +108,17 @@ body {
   text-align: center;
 }
 
-/* 4. The Grid Container */
-/* Matches your <div class="services"> */
 .services {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 20px;
 }
 
-/* 6. Article: Flexbox column direction */
 #services article {
   background-color: #fff;
   padding: 30px;
   display: flex;
   flex-direction: column;
-  /* Optional: adds a subtle shadow like the mockup */
   box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
 }
 
@@ -145,12 +132,10 @@ body {
   margin-bottom: 20px;
 }
 
-/* 7. Button: Margin auto to push to bottom */
 #services article .btn {
-  margin-top: auto; /* Pushes button to the bottom of the card */
-  align-self: flex-start; /* Keeps button from stretching width-wise */
+  margin-top: auto; 
+  align-self: flex-start; 
   
-  /* 8. Button Styling */
   display: inline-block;
   padding: 12px 24px;
   background-color: #000;
@@ -161,71 +146,78 @@ body {
   transition: all 0.3s ease;
 }
 
-/* 8. Hover state: Swap colors */
 #services article .btn:hover {
   background-color: #fff;
   color: #000;
-  /* Border remains black */
 }
 
-
-
-
-
-/* #services {
- background-color: #fafafa;
- padding-block: 4em;
-}
-
-#sevrvices .wrapper {
-max-width: 940px;
-  margin-inline: auto; 
-  padding-inline: 20px; 
-  
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-
-  gap: 20px;
-} */
-
-/* #services h2 {
-max-width:  600px;
-margin-inline: auto;
-margin-bottom: 2em;
-text-align: center;
-}
-
-#services article {
+#work {
   background-color: #fff; 
-  padding: 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  padding-block: 4em;
 }
 
-#services article h3 {
-  margin-top: 0;
+#work .wrapper {
+  max-width: 940px;
+  margin-inline: auto;
+  padding-inline: 60px;
 }
 
-
-
-#services article .btn {
-  margin-top: auto;
-  display: block;
+.my-work h2 {
+  max-width: 940px; 
+  margin-inline: auto;
+  margin-bottom: 1.5em;
   text-align: center;
-  padding: 12px 0;
+}
+
+.my-work p {
+  max-width: 940px; 
+  margin-inline: auto;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.my-work > div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  gap: 0px;
+}
+
+.my-work img {
+  width: 100%;
+  height: 350px; 
+  object-fit: cover;
+  display: block;
+  align-items: center;
+}
+
+
+.my-work img:nth-child(1),
+.my-work img:nth-child(2) {
+  grid-column: span 3;
+}
+
+
+.my-work img:nth-child(3),
+.my-work img:nth-child(4),
+.my-work img:nth-child(5) {
+  grid-column: span 2;
+  padding-top: 0;
+}
+
+footer {
   background-color: #000;
   color: #fff;
-  border: 2px solid #000;
-  text-decoration: none;
-  transition: all 0.3s ease;
+  width: 100%;
+  height: 60px;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#services article .btn:hover {
-  background-color: #fff;
-  color: #000;
-} */
+footer small {
+margin: 0;
+}
 
 
 
